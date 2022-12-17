@@ -1,0 +1,32 @@
+
+
+
+
+.activitiesShortContainer{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    margin-top: 8%;
+}
+
+.shortActivitiesH2{
+    text-align: start;
+}
+
+.shortActivitiesItem{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+}
+
+.shortAcitivitiesPart{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+}
+
+.activitiesImg{
+    height: 200px;
+    width: 300px;
+}

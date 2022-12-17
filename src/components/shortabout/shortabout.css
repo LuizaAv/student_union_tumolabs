@@ -1,0 +1,49 @@
+
+
+
+.shortaboutUsContainer{
+    width: 75%;
+    margin: auto;
+    margin-top: 40%;
+    text-align: justify;
+}
+
+.membersOfUnion{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.linesOfMembers{
+    display: flex;
+    flex-direction: row;
+}
+
+.aMemberOfUnion{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12%;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.aMemberOfUnion > img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.becomeAMember{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.becomeAMember:visited{
+    color: inherit;
+}
+
+.becomeMemberLink{
+    margin: 0;
+    margin-top: 10%;
+    text-decoration: none;
+}

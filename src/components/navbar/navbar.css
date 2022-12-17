@@ -1,0 +1,60 @@
+
+
+
+.navbarLogo{
+    text-decoration: none;
+}
+
+.navbarMainContainer{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+}
+
+.logoContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.logoContainer > div {
+    flex-grow: 5;
+    color: #EDEDED;
+    width: 200px;
+    text-align: start;
+    margin-top: 3.7%;
+
+}
+
+#navbarItem1{
+    margin: 3%;
+    margin-left: 5%;
+}
+
+#navbarItem2{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 5;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-top: 0.5%;
+}
+
+.navbarPages{
+    font-size: 15px;
+    text-decoration: none;
+    color: #EDEDED;
+}
+
+.navbarPages:hover{
+    color: #d65931;
+}
+
+.userIcon{
+    color:#EDEDED;
+    height: 30px;
+    width: 30px;
+}
+
+.userIconContainer{
+    margin-left: 10%;
+}

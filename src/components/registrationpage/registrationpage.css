@@ -1,0 +1,38 @@
+
+
+.registrationPageContainer{
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.registrationForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.registrationFormInputs{
+    width: 30vw;
+    height: 7vh;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+.regTextarea{
+    width: 30vw;
+    height: 20vh;
+    margin: auto;
+}
+
+.regButton{
+    width: 15vw;
+    height: 5vh;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color:#D3D3D3;
+    margin-top: 3%;
+    margin-left: 50%;
+}

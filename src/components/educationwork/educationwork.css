@@ -1,0 +1,67 @@
+
+
+
+.eduMainContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.eduMainContainer > h2 {
+    text-align: start;
+    margin-top: 8%;
+}
+
+.programsContainer{
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+    width: 65vw;
+    margin-top: 2%;
+    padding: 2%;
+}
+
+.programsContainer > h4{
+    margin-top: 0px;
+}
+
+.programsContainer > span {
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+.programsContainer > img {
+    margin-left: 3%;
+}
+
+.loadMoreBtn{
+    height: 5vh;
+    width: 15vw;
+}
+
+.loadMoreBtnContainer{
+    margin: auto;
+    margin-top: 5%;
+}
+
+.jobContainer{
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    width: 65vw;
+    margin-top: 2%;
+    padding: 2%;
+}
+
+.jobContainer > span {
+    text-align: justify;
+    margin-top: -2%;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+.jobPlatformsContainer > h2 {
+    text-align: start;
+    margin-top: 8%;
+}

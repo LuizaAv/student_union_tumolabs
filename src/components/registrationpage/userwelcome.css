@@ -1,0 +1,7 @@
+
+
+
+.userHomePageContainer{
+    display: flex;
+    flex-direction: column;
+}
