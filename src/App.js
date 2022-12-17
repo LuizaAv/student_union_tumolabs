@@ -9,10 +9,8 @@ import Newsevents from "./components/newsevents/newsevents"
 
 import {Route, Routes} from "react-router-dom";
 import CurrentPage from './currentpage';
-import LoginPage from './components/loginpage/loginpage';
 import Footer from './components/footer/footer';
 import RegistrationPage from './components/registrationpage/registrationpage';
-import Createdaccount from './components/registrationpage/createdaccount';
 import Userwelcome from './components/registrationpage/userwelcome';
 
 function App() {
@@ -28,9 +26,7 @@ function App() {
         <Route path="/advicesupport" element={<Advicesupport />} />
         <Route path="/educationwork" element={<Educationwork />} />
         <Route path="/newsevents" element={<Newsevents />} />
-        <Route path="/loginpage" element={<LoginPage />} />
         <Route path="/registrationpage"  element={<RegistrationPage />}/>
-        <Route path="/createdaccount" element={<Createdaccount />} />
         <Route path="/registrationpage/userhomepage"  element={<Userwelcome />} />
       </Routes>
       <Footer />

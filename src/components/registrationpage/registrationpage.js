@@ -1,92 +1,108 @@
 
 
 
-import React, {useEffect, useRef, useState} from "react"
-import { Link } from "react-router-dom"
-import LoginPage from "../loginpage/loginpage"
-import "./registrationpage.css"
-
-export default function RegistrationPage(props){
-    const name = useRef()
-    const password = useRef()
-    const passwordRepeat= useRef()
-    const email = useRef()
-    const text = useRef()
-
-    const [show, setShow] = useState(false)
-
-    const signuped = localStorage.getItem("signUp")
-    const localEmail = localStorage.getItem("email")
-    const localName = localStorage.getItem("name")
-    const localPassword = localStorage.getItem("password")
+import { Button } from "@material-ui/core";
+import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import Home from "./home";
+import './registrationpage.css';
 
 
-    useEffect(() => {
-        if(localEmail){
-            setShow(true)
-            console.log(show)
-        }
-    })
-    
-    const handleBtnClick = () => {
-        if(name.current.value &&
-            password.current.value &&
-            passwordRepeat.current.value &&
-            email.current.value &&
-            text.current.value){
-                localStorage.setItem("name", name.current.value)
-                localStorage.setItem("password", password.current.value)
-                localStorage.setItem("passwordRepeat", passwordRepeat.current.value)
-                localStorage.setItem("email", email.current.value)
-                localStorage.setItem("text", text.current.value)
-                localStorage.setItem("signUp", email.current.value)
-                window.location.reload()
-                window.location.pathname = "/registrationpage/userhomepage"
-                alert("You are successfully signed up")
-            }
+export default function LoginRegistrationPage(){
+   const name=useRef()
+   const email=useRef()
+   const password=useRef()
+   const repeatpassword=useRef()
+   const [showHome,setShowHome]=useState(false)
+   const [show,setShow]=useState(false)
+    const localSignUp=localStorage.getItem("signUp")
+    const localEmail=localStorage.getItem("email")
+    const localPassword=localStorage.getItem("password")
+    const localRepeatPassword=localStorage.getItem("repeatpassword")
+    const localName=localStorage.getItem("name")
+   useEffect(()=>{
+    if(localSignUp){
+        setShowHome(true)
     }
-
-    const handleClick = (e) => {
-        e.preventDefault()
-        if(email.current.value === localEmail && password.current.value === localPassword){
-            localStorage.setItem("signUp", email.current.value)
-            
-        }else{
-            alert("Please enter correct password")
-        }
+    if(localEmail){
+        setShow(true)
     }
+   })
+   const handleClick=()=>{
+        if(!(password.current.value===repeatpassword.current.value)){
+        alert("Passwords don't match")
+       }else if(name.current.value&&email.current.value&&password.current.value)
+      {
+        localStorage.setItem("name",name.current.value)
+        localStorage.setItem("email",email.current.value)
+        localStorage.setItem("password",password.current.value)
+        localStorage.setItem("signUp",email.current.value)
+        localStorage.setItem("repeatpassword",repeatpassword.current.value)
+        alert("Account created successfully!!")
+        window.location.reload()
+      }
+   }
 
+   //repeatpassword.current.value===repeatpassword&&password.current.value===repeatpassword.current.value
+
+   const handleClickNewMember = () => {
+    localStorage.clear()
+    window.location.reload()
+   }
+
+   const handleSignIn=()=>{
+    if(email.current.value===localEmail&&password.current.value===localPassword){
+        localStorage.setItem("signUp",email.current.value)
+        window.location.reload()
+    }else{
+        alert("You must fill all fields")
+    }
+   }
     return(
-        <div className="registrationPageContainer">
-            {
-                show ? <LoginPage btnClick={handleClick}/> :
-                <div className="registrationForm">
-            <h2>Become a Member</h2>
-            <input placeholder="username" className="registrationFormInputs" type="text" 
-            ref={name}
-            name="username"
-            />
-            <input placeholder="create password" className="registrationFormInputs" type="password"
-            ref={password}
-            name="password"
-            />
-            <input placeholder="repeat password" className="registrationFormInputs" type="password"
-            ref={passwordRepeat}
-            name="repeatpassword"
-            />
-            <input placeholder="email" className="registrationFormInputs" type="email"
-            ref={email}
-            name="email"
-            />
-            <textarea placeholder="about you" className="regTextarea" type="text"
-            ref={text}
-            name="text"
-            />
-            <button className="regButton" onClick={handleBtnClick}>Create account</button>
-        </div>
-
+        <div>
+            {showHome?<Home/>:
+            (show?
+                <div className="container">
+                        <h1>Hello {localName}</h1>
+                        <h2>Login</h2>
+                        <div className="input_space">
+                            <input placeholder="Email" type='text' ref={email} className="loginInputs"/>
+                        </div>
+                        <div className="input_space">
+                            <input placeholder="Password" type='password' ref={password} className="loginInputs"/>
+                        </div>
+                        <div className="homePageBtnsContainer">
+                            <Button onClick={handleSignIn} className="homepageBtns"
+                            style={{backgroundColor :"#D3D3D3", color: "#31333B"}}
+                            >Log in</Button>
+                            <p >Not a member yet?</p>
+                            <Button onClick={handleClickNewMember} className="homepageBtns"
+                            style={{backgroundColor :"#D3D3D3", color: "#31333B"}}
+                            >Become a member</Button>
+                        </div>
+                </div>
+                :
+                <div className="container">
+                        <h2>Registration</h2>
+                        <div className="input_space">
+                            <input placeholder="Name" type='text' ref={name} className="regInputs"/>
+                        </div>
+                        <div className="input_space">
+                            <input placeholder="Password" type='password' ref={password} className="regInputs"/>
+                        </div>
+                        <div className="input_space">
+                            <input placeholder="Repeat password" type='password' ref={repeatpassword} className="regInputs"/>
+                        </div>
+                        <div className="input_space">
+                            <input placeholder="Email" type='text' ref={email} className="regInputs"/>
+                        </div>
+                        <div className="regBtnContainer">
+                            <Button onClick={handleClick} className="regSignUpBtn"
+                            style={{backgroundColor :"#D3D3D3", color: "#31333B"}}
+                            >Sign Up</Button>
+                        </div>
+                </div>)
             }
-            
         </div>
-    )
+    );
 }

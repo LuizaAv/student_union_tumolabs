@@ -49,7 +49,7 @@ export default function Navbar(){
                     </CardContent>
                     <CardContent className="userIconContainer">
                         <Typography className="iconContainer">
-                            <Link to="/loginpage">
+                            <Link to="/registrationpage">
                                 <FaUserGraduate className="userIcon"/>
                             </Link>
                         </Typography>

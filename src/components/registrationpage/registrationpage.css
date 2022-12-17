@@ -36,3 +36,58 @@
     margin-top: 3%;
     margin-left: 50%;
 }
+
+.homePageBtnsContainer{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 55%;
+    margin-top: 3%;
+}
+
+.loginInputs{
+    height: 8vh;
+    width: 45vw;
+    margin-top: 1%;
+    border-radius: 15px;
+    border: 0px;
+    background-color: #D3D3D3;
+    padding-left: 2%;
+    outline: 0;
+}
+
+.homepageBtns{
+    height: 6vh;
+    width: 17vw;
+}
+
+.homePageBtnsContainer > p {
+    text-align:center;
+}
+
+.regInputs{
+    height: 8vh;
+    width: 45vw;
+    margin-top: 1%;
+    border-radius: 15px;
+    border: 0px;
+    background-color: #D3D3D3;
+    padding-left: 2%;
+    outline: 0;
+}
+
+.regSignUpBtn{
+    height: 6vh;
+    width: 17vw;
+}
+
+.regBtnContainer{
+    width: 20vw;
+    margin-left: 55%;
+    margin-top: 3%;
+}
+
+.logout{
+    height: 6vh;
+    width: 17vw;
+}
