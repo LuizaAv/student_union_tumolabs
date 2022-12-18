@@ -15,33 +15,33 @@ export function ShortcutOfShortNews() {
             <div className="shortNewsItem">
                 <img src={news1} className="newsImg"/>
                 <div className="shortNewsPart">
-                    <h3><a href="https://tumolabs.am/%d5%a9%d5%b8%d6%82%d5%b4%d5%b8-%d5%ac%d5%a1%d5%a2%d5%a5%d6%80%d5%ab%d6%81-vxsoft/" target="_blank">Թումո լաբերից` VXSoft. Սասունի <br/>բռտասնամյա թումոյական ճանապարհը</a></h3>
-                    <span>22-ամյա Սասունին կարելի է «վետերան թումոցի» կոչել, քանի որ նա անցել 
-                    է Թումոյի ամբողջական շղթայով՝ Թումո – Թումո լաբեր – 42 Երևան, իսկ այժմ 
-                    համատեղում է ուսումը՝ ՏՏ ընկերությունում աշխատանքի հետ: Բայց այս ամենի 
-                    մասին` հերթով:</span>
+                    <h3><a href="https://tumolabs.am/en/from-tumo-labs-to-vxsoft/" target="_blank">
+                    From TUMO Labs to VXSoft: Sasun’s Ten-Year Journey</a></h3>
+                    <span>222-year-old Sasun’s long journey through the TUMO chain 
+                    is quite special: from TUMO to TUMO Labs and 42 Yerevan, and 
+                    now, he juggles education with his work in tech. Let’s go through
+                    all the phases one by one.</span>
                 </div>
             </div>
             <div className="shortNewsItem">
                 <img src={news2} className="newsImg"/>
                 <div className="shortNewsPart">
-                    <h3><a href="https://tumolabs.am/shortcut-%d5%a4%d5%a5%d5%ba%d5%ab-%d5%bf%d5%bf-%d5%b8%d5%ac%d5%b8%d6%80%d5%bf/" target="_blank">Shortcut դեպի ՏՏ ոլորտ</a></h3>
-                    <span>Այս բլոգում մեր խոշորացույցի տակ են հայտնվել Թումո լաբերի առաջին ու 
-                    ամենաակտիվ ուսանողներից տվյալագետ Սոնա Գաբրիելյանն ու ծրագրավորող Արթուր 
-                    Սահակյանը, որոնք այս կարճ ժամանականակահատվածում հասցրել են առաջ շարժվել և՛ 
-                    ուսումնական, և՛ գործնական ոլորտներում:</span>
+                    <h3><a href="https://tumolabs.am/en/shortcut-to-the-tech-world/" target="_blank">Shortcut to the Tech World</a></h3>
+                    <span>We’re highlighting two of our first students: data scientist 
+                    Sona Gabrielyan and programmer Arthur Sahakyan. In just a short amount 
+                    of time, they’ve made huge strides in their professional development.</span>
                 </div>
             </div>
             <div className="shortNewsItem">
                 <img src={news3} className="newsImg"/>
                 <div className="shortNewsPart">
-                    <h3><a href="https://tumolabs.am/%d5%ad%d5%a5%d5%ac%d5%a1%d6%81%d5%ab-%d6%84%d5%a1%d5%b2%d5%a1%d6%84/" target="_blank">Խելացի քաղաք</a></h3>
-                    <span>Թումո լաբերի և Ագրարային համալսարանի համատեղ նախագծում ուսանողները մշակել 
-                    են սենսորներից, շատրվաններից, մուտքի համակարգերից, 
-                    լուսացույցներից և ծխի դետեկտորներից բաղկացած խելացի քաղաք:</span>
+                    <h3><a href="https://tumolabs.am/en/smart-city/" target="_blank">Smart city</a></h3>
+                    <span>In a joint project between TUMO Labs and the Armenian National 
+                    Agrarian University project, students built a smart city with automated 
+                    motion detectors, water fountains, entrance systems, traffic lights, 
+                    and smoke detectors.</span>
                 </div>
             </div>
-            <Link to="/newsevents">Find more</Link>
         </div>
     )
 }
@@ -51,6 +51,7 @@ export default function Shortnews(){
     return(
         <div className="newsShortContainer">
             <ShortcutOfShortNews />
+            <Link to="/newsevents">Find more</Link>
         </div>
     )
 }
