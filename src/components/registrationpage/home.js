@@ -25,7 +25,7 @@ function Home(){
                 style={{backgroundColor :"#D3D3D3", color: "#31333B"}}
                 >LogOut</Button>
                 <Button onClick={deleteAccount} className="delete"
-                style={{backgroundColor :"#D3D3D3", color: "#31333B"}}
+                style={{backgroundColor :"#D3D3D3", color: "#31333B", marginTop: "5%"}}
                 >Delete</Button>
             </div>
         </div>

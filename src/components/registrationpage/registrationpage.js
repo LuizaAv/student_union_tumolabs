@@ -63,7 +63,7 @@ export default function LoginRegistrationPage(){
             {showHome?<Home/>:
             (show?
                 <div className="container">
-                        <h1>Hello {localName}</h1>
+                        <h1>Logged In User {localName}</h1>
                         <h2>Login</h2>
                         <div className="input_space">
                             <input placeholder="Email" type='text' ref={email} className="loginInputs"/>

@@ -91,3 +91,18 @@
     height: 6vh;
     width: 17vw;
 }
+
+.delete{
+    height: 6vh;
+    width: 17vw;
+    margin-top: 2%;
+}
+
+
+.loginDeleteBtnsContainer{
+    width: 16vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
