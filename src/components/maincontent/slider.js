@@ -9,10 +9,9 @@ import HeroSlider, {Slide} from "hero-slider";
 import slide from "../../icons/slide.jpg";
 import slide1 from "../../icons/slide1.jpg";
 import slide2 from "../../icons/slide2.jpg";
-import slide3 from "../../icons/slide3.jpg";
 import slide4 from "../../icons/slide4.jpg";
 
-const listOfPic = [slide, slide1, slide2, slide3, slide4]
+const listOfPic = [slide, slide1, slide2, slide4]
 
 export default function Slider(){
 
