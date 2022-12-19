@@ -76,12 +76,18 @@
     outline: 0;
 }
 
+.signInBtn{
+    margin-top: 2%;
+}
+
 .regSignUpBtn{
     height: 6vh;
     width: 17vw;
 }
 
 .regBtnContainer{
+    display: flex;
+    flex-direction: column;
     width: 20vw;
     margin-left: 55%;
     margin-top: 3%;

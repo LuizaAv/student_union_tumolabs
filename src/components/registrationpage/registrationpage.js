@@ -106,3 +106,8 @@ export default function LoginRegistrationPage(){
         </div>
     );
 }
+
+/* const handleSignInClick = () => {
+        window.location.pathname = ""
+   }
+*/

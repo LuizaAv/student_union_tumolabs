@@ -4,7 +4,8 @@
 .faqContainer{
     display: flex;
     flex-direction: column;
-    width: 70% auto;
+    width: 70% ;
+    text-align: start;
     margin-left: 15%;
     margin-top: 10%;
 
@@ -15,31 +16,42 @@
     margin-left: 4%;
 }
 
-.anFAQAnswercontainer{
-    display: flex;
-    flex-direction: column;
-    height: 10vh;
-    width: 50vw;
+
+.toggleContainer{
+    height: 100vw;
+    text-align: justify;
 }
 
-.questionContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 2%;
-    padding: 1%;
-}
-
-.question{
+.item{
     background-color: #D3D3D3;
+    margin-bottom: 3%;
     height: 6vh;
-    width: 40vw;
     padding: 1%;
-    text-align: start;
-    margin-left: 6%;
 }
 
-.showAnswer{
+.title{
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.content {
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+
+.content_show{
+    width: 66.45vw;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    max-height: 100px;
     background-color: #D3D3D3;
-    margin-left: 5%;
+    transition: all 0.5s cubic-bezier(1,1,1,1);
+    text-align: start;
+    margin-left: -1%;
+    padding: 2%;
+}
+
+.questionTypeArea{
+    margin-top: -55%;
 }
