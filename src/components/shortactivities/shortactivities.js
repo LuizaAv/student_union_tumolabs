@@ -6,6 +6,7 @@ import "./shortactivities.css"
 
 import sport from "../../icons/sportIcon.jpg";
 import chess from "../../icons/chess.avif";
+import { Link } from "react-router-dom";
 
 export default function Shortactivities(){
 
@@ -26,6 +27,7 @@ export default function Shortactivities(){
                     <span>Lorem ispum</span>
                 </div>
             </div>
+            <Link to="/activities">Find more</Link>
         </div>
     )
 }
