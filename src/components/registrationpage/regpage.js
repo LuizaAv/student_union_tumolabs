@@ -31,7 +31,7 @@ export default function Regpage(){
         && (email.current.value === "") && (name.current.value === "")) {
             alert("All fields must be filled")
             window.current.reload()
-        }else if(!(name.current.value === String)){
+        }else if(!(typeof name.current.value === "string")){
             alert("Name can contain only letters")
             window.current.reload()
         }else if(!(password.current.value===repeatpassword.current.value)){
