@@ -14,13 +14,9 @@ export default function Regpage(){
     const name=useRef()
     const email=useRef()
     const password=useRef()
-    const repeatpassword=useRef()
+    const repeatpassword =useRef()
 
     const localSignUp=localStorage.getItem("signUp")
-    const localEmail=localStorage.getItem("email")
-    const localPassword=localStorage.getItem("password")
-    const localRepeatPassword=localStorage.getItem("repeatpassword")
-    const localName=localStorage.getItem("name")
 
     const [showHome,setShowHome]=useState(false)
 
@@ -31,19 +27,27 @@ export default function Regpage(){
        })
 
     const handleClick=()=>{
-        if(!(password.current.value===repeatpassword.current.value)){
-        alert("Passwords don't match")
-       }else if(name.current.value&&email.current.value&&password.current.value)
-      {
-        localStorage.setItem("name",name.current.value)
-        localStorage.setItem("email",email.current.value)
-        localStorage.setItem("password",password.current.value)
-        localStorage.setItem("signUp",email.current.value)
-        localStorage.setItem("repeatpassword",repeatpassword.current.value)
-        alert("Account created successfully!!")
-        window.location.reload()
-        
-      }
+        if((repeatpassword.current.value === "") && (password.current.value === "")
+        && (email.current.value === "") && (name.current.value === "")) {
+            alert("All fields must be filled")
+            window.current.reload()
+        }else if(!(name.current.value === String)){
+            alert("Name can contain only letters")
+            window.current.reload()
+        }else if(!(password.current.value===repeatpassword.current.value)){
+            alert("Passwords don't match")
+            window.current.reload()
+            }else if(name.current.value&&email.current.value&&password.current.value&&repeatpassword.current.value)
+            {
+                localStorage.setItem("name",name.current.value)
+                localStorage.setItem("email",email.current.value)
+                localStorage.setItem("password",password.current.value)
+                localStorage.setItem("signUp",email.current.value)
+                localStorage.setItem("repeatpassword",repeatpassword.current.value)
+                alert("Account created successfully!!")
+                window.location.reload()
+                
+            }
    }
 
 

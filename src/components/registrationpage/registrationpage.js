@@ -8,15 +8,12 @@ import './registrationpage.css';
 
 
 export default function LoginRegistrationPage(){
-   const name=useRef()
    const email=useRef()
    const password=useRef()
-   const repeatpassword=useRef()
    const [showHome,setShowHome]=useState(false)
     const localSignUp=localStorage.getItem("signUp")
     const localEmail=localStorage.getItem("email")
     const localPassword=localStorage.getItem("password")
-    const localRepeatPassword=localStorage.getItem("repeatpassword")
     const localName=localStorage.getItem("name")
    useEffect(()=>{
     if(localSignUp){
