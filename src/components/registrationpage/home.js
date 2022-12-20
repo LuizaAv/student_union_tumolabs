@@ -9,7 +9,7 @@ import './registrationpage.css';
 function Home(){
     const logout=()=>{
         localStorage.removeItem("signUp")
-        window.location.reload()
+        window.location.pathname = "/registrationpage"
     }
     const deleteAccount=()=>{ 
         localStorage.clear()

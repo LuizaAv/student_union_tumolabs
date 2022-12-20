@@ -12,6 +12,7 @@ import CurrentPage from './currentpage';
 import Footer from './components/footer/footer';
 import RegistrationPage from './components/registrationpage/registrationpage';
 import Userwelcome from './components/registrationpage/userwelcome';
+import Regpage from './components/registrationpage/regpage';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/newsevents" element={<Newsevents />} />
         <Route path="/registrationpage"  element={<RegistrationPage />}/>
         <Route path="/registrationpage/userhomepage"  element={<Userwelcome />} />
+        <Route path="/regpage" element={<Regpage/>}/>
       </Routes>
       <Footer />
     </div>
