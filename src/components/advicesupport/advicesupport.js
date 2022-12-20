@@ -46,16 +46,14 @@ const data = [
 
 export default function Advicesupport(){
     const [selected, setSelected] = useState(null)
-    const [text, setText] = useState("")
     const typedText = useRef()
 
     const loggedInUser = localStorage.getItem("signUp")
-    console.log("helo user")
 
     const handleSendClick = (e) => {
-        setText(typedText.current.value)
-        localStorage.setItem("question", text)
+        localStorage.setItem("question", typedText.current.value)
         alert("We have successfully recieved your question. We will give an answer via email.")
+        typedText.current.value = ""
     }
 
     const toggle = (index) => {
@@ -92,7 +90,7 @@ export default function Advicesupport(){
                     loggedInUser ?
                     <div className="questionTypeArea">
                         <h2>Write your question</h2>
-                        <textarea placeholder="...type" ref = {typedText}></textarea>
+                        <textarea placeholder="...type" ref = {typedText} type="text"></textarea>
                         <button onClick={(e) => handleSendClick(e)}>Send</button>
                     </div>  :
                     null
