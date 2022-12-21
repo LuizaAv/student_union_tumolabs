@@ -19,9 +19,8 @@
 .footerIconAndLogoContainer{
     display: flex;
     flex-direction: column;
-    margin: auto;
     margin-top: 4%;
-    margin-left: 20%;
+    margin-left: 15%;
 }
 
 .footerLogo{
@@ -43,11 +42,10 @@
 .footerAddressMailPhoneContainer{
     height: 100px;
     width: 400px;
-    margin-left: -20%;
     margin-top: 4%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    margin-left: 15%;
 }
 
 .rights{
@@ -68,6 +66,7 @@
     flex-direction: row;
     color: #D3D3D3;
     size: 25px;
+    margin-top: 5%;
 }
 
 .footerItems{

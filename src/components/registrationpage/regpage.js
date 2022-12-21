@@ -30,13 +30,6 @@ export default function Regpage(){
        })
 
     const handleClick=()=>{
-        if(password.current.value.length < 8 || repeatpassword.current.value.length < 8 ){
-            alert("Password can't be less than 8 characters")
-        }
-
-        if(localMotivation.length > 50){
-            alert("The field can't exceed 50 letters")
-        }
 
         if((repeatpassword.current.value === "") && (password.current.value === "")
         && (email.current.value === "") && (name.current.value === "")) {
@@ -49,7 +42,7 @@ export default function Regpage(){
             window.current.reload()
             }
             
-        if(name.current.value&&email.current.value&&password.current.value&&repeatpassword.current.value&&motivationText.current.value)
+        if(name.current.value&&email.current.value&&password.current.value&&repeatpassword.current.value)
             {
                 localStorage.setItem("name",name.current.value)
                 localStorage.setItem("email",email.current.value)
