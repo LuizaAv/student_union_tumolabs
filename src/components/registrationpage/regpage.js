@@ -31,13 +31,13 @@ export default function Regpage(){
         && (email.current.value === "") && (name.current.value === "")) {
             alert("All fields must be filled")
             window.current.reload()
-        }else if(!(typeof name.current.value === "string")){
-            alert("Name can contain only letters")
-            window.current.reload()
-        }else if(!(password.current.value===repeatpassword.current.value)){
+        }
+        if(!(password.current.value===repeatpassword.current.value)){
             alert("Passwords don't match")
             window.current.reload()
-            }else if(name.current.value&&email.current.value&&password.current.value&&repeatpassword.current.value)
+            }
+            
+        if(name.current.value&&email.current.value&&password.current.value&&repeatpassword.current.value)
             {
                 localStorage.setItem("name",name.current.value)
                 localStorage.setItem("email",email.current.value)
