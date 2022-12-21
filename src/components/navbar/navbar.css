@@ -1,6 +1,3 @@
-
-
-
 .navbarLogo{
     text-decoration: none;
 }
@@ -18,11 +15,10 @@
 
 .logoContainer > div {
     flex-grow: 5;
-    color: #EDEDED;
+    color: #e0fbfcff;
     width: 200px;
     text-align: start;
     margin-top: 3.7%;
-
 }
 
 #navbarItem1{
@@ -35,24 +31,28 @@
     flex-direction: row;
     flex-grow: 5;
     justify-content: space-between;
-    margin-left: 5%;
+    margin-left: 10%;
     margin-top: 0.5%;
 }
 
 .navbarPages{
     font-size: 15px;
     text-decoration: none;
-    color: #EDEDED;
+    color: #e0fbfcff;
 }
 
 .navbarPages:hover{
-    color: #d65931;
+    color: #ef476fff;
 }
 
 .userIcon{
-    color:#EDEDED;
+    color:#e0fbfcff;
     height: 30px;
     width: 30px;
+}
+
+.userIcon:hover{
+    color: #ef476fff;
 }
 
 .userIconContainer{

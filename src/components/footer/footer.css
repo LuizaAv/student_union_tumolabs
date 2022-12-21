@@ -20,12 +20,13 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 5%;
-    margin-left: 9%;
+    margin-top: 4%;
+    margin-left: 20%;
 }
 
 .footerLogo{
-    margin-top: 5%;
+    margin-top: 4%;
+    margin-left: 10%;
 }
 
 .footerLogo > img {
@@ -42,11 +43,17 @@
 .footerAddressMailPhoneContainer{
     height: 100px;
     width: 400px;
-    margin-left: 5%;
-    margin-top: 5%;
+    margin-left: 4%;
+    margin-top: 4%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.rights{
+    margin-top: 24%;
+    margin-left: 0%;
+    color: #828387;
 }
 
 .addressContainer{
@@ -56,16 +63,12 @@
     size: 25px;
 }
 
-.rights{
-    margin-top: 20%;
-    color: #828387;
-}
-
 .emailContainer{
     display: flex;
     flex-direction: row;
     color: #D3D3D3;
     size: 25px;
+    margin-left: 0;
 }
 
 .phoneNumberContainer{

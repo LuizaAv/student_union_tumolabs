@@ -18,7 +18,7 @@ import "./educationwork.css"
 function Cards () {
     return(
         <div>
-        <Card className="programsContainer" style={{backgroundColor: "#f5eceb"}}>
+        <div className="programsContainer">
                 <img src={gamedevelopment}/>
                 <span>
                 <h4>Animation</h4>
@@ -30,8 +30,8 @@ function Cards () {
                 They can put all of this knowledge to use in 3D animation, stop motion
                 animation and more. <a href="https://tumo.org/project/animation/" target="_blank">For more info</a>
                 </span>
-            </Card>
-            <Card className="programsContainer" style={{backgroundColor: "#f5eceb"}}>
+            </div>
+            <div className="programsContainer">
                 <img src={animationicon}/>
                 <span>
                 <h4>Game development</h4>
@@ -42,8 +42,8 @@ function Cards () {
                 and develop their own 3D video game using the Unity Engine. What they learn 
                 can be applied to most industry-leading game engines.<a href="https://tumo.org/project/gamedev/" target="_blank">For more info</a>
                 </span>
-            </Card>
-            <Card className="programsContainer" style={{backgroundColor: "#f5eceb"}}>
+            </div>
+            <div className="programsContainer">
                 <img src={webdevelopment}/>
                 <span>
                 <h4>Web Development</h4>
@@ -53,7 +53,7 @@ function Cards () {
                 problem-solving so that they can achieve independence and think beyond the 
                 browser window. <a href="https://tumo.org/project/webdevelopment/" target="_blank">For more info</a>
                 </span>
-            </Card>
+            </div>
         </div>
     )
 }
@@ -71,7 +71,7 @@ export default function Educationwork(){
             {!showmore ? <Cards /> :
             <div>
                 <Cards />
-                <Card className="programsContainer" style={{backgroundColor: "#f5eceb"}}>
+                <div className="programsContainer">
                     <img src={filmmaking}/>
                     <span>
                     <h4>Filmmaking</h4>
@@ -82,8 +82,8 @@ export default function Educationwork(){
                     insight and hands-on experience with the foundations of filmmaking: planning, 
                     shooting, and editing. In short, telling a visual story. <a href="https://tumo.org/project/filmmaking/" target="_blank">For more info</a>
                     </span>
-                </Card>
-                <Card className="programsContainer" style={{backgroundColor: "#f5eceb"}}>
+                </div>
+                <div className="programsContainer">
                     <img src={graphicdesign}/>
                     <span>
                     <h4>Graphic Design</h4>
@@ -93,22 +93,18 @@ export default function Educationwork(){
                      forward by creating designs and branding using industry-standard tools such as 
                      Adobe Illustrator and Photoshop. <a href="https://tumo.org/project/graphicdesign/" target="_blank">For more info</a>
                     </span>
-                </Card>
+                </div>
             </div>
             }
             <div className="loadMoreBtnContainer">
-                <Button 
+                <button 
                 onClick={handleClick} 
-                style={{backgroundColor: "#828387", color: "#FFFFFF"}} 
-                className="loadMoreBtn"
-                id="loadbtnId"
-                >
-                Load more...
-                </Button>
+                className="loadMoreBtn">Load more...
+                </button>
             </div>
             <div className="jobPlatformsContainer">
                 <h2>Job platforms for Students</h2>
-                <Card className="jobContainer" style={{backgroundColor: "#f5eceb"}}>
+                <div className="jobContainer">
                     <img src={jobfinder}/>
                     <span>
                     <h4>JobFinder.am</h4>
@@ -123,8 +119,8 @@ export default function Educationwork(){
                     and self-marketing skills. Therefore there seems to be a problem in connecting 
                     available talent with available positions. <a href="https://www.jobfinder.am/" target="_blank">For more information</a>
                     </span>
-                </Card>
-                <Card className="jobContainer" style={{backgroundColor: "#f5eceb"}}>
+                </div>
+                <div className="jobContainer">
                     <img src={staff}/>
                     <span>
                     <h4>Staff.am</h4>
@@ -142,8 +138,8 @@ export default function Educationwork(){
                     verification of skills and certificates included in CVs, huge database of potential 
                     employees, flexible packages for companies to choose from and more. <a href="https://staff.am/en" target="_blank">For more information</a>
                     </span>
-                </Card>
-                <Card className="jobContainer" style={{backgroundColor: "#f5eceb"}}>
+                </div>
+                <div className="jobContainer">
                     <img src={professional}/>
                     <span>
                     <h4>Professional.am</h4>
@@ -153,7 +149,7 @@ export default function Educationwork(){
                     allowing companies to get plenty of applications in a short period 
                     of time.<a href="https://www.professionals.am/home" target="_blank">For more information</a>
                     </span>
-                </Card>
+                </div>
             </div>
         </div>
     )

@@ -44,6 +44,7 @@ const data = [
 ]
 
 
+
 export default function Advicesupport(){
     const [selected, setSelected] = useState(null)
     const typedText = useRef()
@@ -75,11 +76,7 @@ export default function Advicesupport(){
                             <div className="title" onClick={() => toggle(index) }>
                                 <span >{item.question}</span>
                             </div>
-                            <div
-                            className={
-                                selected === index ? "content_show" : "content"
-                            }
-                            >
+                            <div className={selected === index ? "content_show" : "content"}>
                                 {item.answer}
                             </div>
                         </div>

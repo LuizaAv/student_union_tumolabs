@@ -11,7 +11,7 @@ import {Link} from "react-router-dom"
 export function ShortcutOfShortNews() {
     return(
         <div>
-            <h2 className="shortNewsh2">News & Events</h2>
+            <h2 className="shortNewsh2"><Link to = "/newsevents" className="h22">News & Events</Link></h2>
             <div className="shortNewsItem">
                 <img src={news1} className="newsImg"/>
                 <div className="shortNewsPart">

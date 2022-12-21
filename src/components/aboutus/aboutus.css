@@ -1,65 +1,80 @@
-
-
-
 .aboutusMain{
-    height: 320vh;
+    height: 220vh;
+    text-align: start;
     margin: auto;
-    margin-top: 5%;
-    width: 75%;
+    margin-top: 4%;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 25%;
-}
-
-.aboutusMain > h2{
-    text-align: start;
-}
-
-.becomeMemberLink{
-    margin: 0;
-    text-decoration: none;
-}
-
-.membershipBtn{
-    color: black;
-}
-
-.aMemberOfUnion > b {
-    margin-top: 10%;
-}
-
-.linesOfMembers > a{
-    color: #828387;
-    text-decoration: none;
-    margin-left: 8%;
+    margin-bottom: 4%;
 }
 
 .membersOfUnion > h2 {
     text-align: start;
 }
 
-.departments{
-    height: 90vh;
-    width: 70vw;
-    margin: auto;
-    margin-top: 4%;
-    background-color: #828387;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 2%;
-    
+.membershipBtn{
+    color: #111111;
+}
+
+.aMemberOfUnion {
+    margin-top: 10%;
+}
+
+.aMemberOfUnion > b {
+    margin-top: 10%;
+}
+
+.aMemberOfUnion > p {
+    margin-top: 2%;
+}
+
+.linesOfMembers > a{
+    color: #111111;
+    text-decoration: none;
+    margin-left: 12%;
 }
 
 .departmentsH2{
     text-align: start;
-    margin-left: 3%;
-    margin-top: 5%;
+    margin-top: 8%;
+}
+
+.departments{
+    height: 40vh;
+    width: 60vw;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2%; 
 }
 
 .departmentsItem{
     display: flex;
     flex-direction: column;
     width: 20vw;
-    text-align: justify;
-    margin-left: 3%;
+    text-align: start;
+    margin-left: 4%;
+}
+
+.becomeAMember{
+    cursor: pointer;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 171px;
+    height: 69px;
+    background: #98c1d9ff;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+}
+
+.becomeAMember:hover{
+    color: #ef476fff;
 }
