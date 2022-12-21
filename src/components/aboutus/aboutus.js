@@ -14,6 +14,7 @@ import AboutUsText from "./aboutustext";
 
 export default function Aboutus(){
 
+    const aMember = localStorage.getItem("signUp")
 
     return(
         <div className="aboutusMain">
@@ -118,11 +119,15 @@ export default function Aboutus(){
                     </div>
                 </div>
             </div>
-            <Link to="/registrationpage" className="becomeMemberLink">
-                <div className="becomeMemberButton">
-                <button className="becomeAMember">Become a Member</button> 
-                </div>
-            </Link>
+            {
+                !aMember ?
+                <Link to="/registrationpage" className="becomeMemberLink">
+                    <div className="becomeMemberButton">
+                    <button className="becomeAMember">Become a Member</button> 
+                    </div>
+                </Link>
+                : null
+            }
         </div>
     )
 }

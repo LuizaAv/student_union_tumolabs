@@ -13,6 +13,8 @@ import p3 from "../../icons/people-07.png";
 
 export default function Shortabout(){
 
+    const aMember = localStorage.getItem("signUp")
+
     return(
         <div>
             <div className="shortaboutUsContainer"><h2><Link to = "/activities" className="h22">About Us</Link></h2>
@@ -26,35 +28,35 @@ export default function Shortabout(){
                 </div>
                 <div className="membersOfUnion">
                     <div className="linesOfMembers">
-                    <a href="https://www.linkedin.com/in/hrachali/" target="_blank">
                     <div className="aMemberOfUnion">
                         <img src={p1} title="Head of Union"/>
                         <b>Karen Harutyunyan</b>
                         <p>Head of Union</p>
                     </div>
-                    </a>
-                    <a href="https://www.linkedin.com/in/anahit-sayadyan/" target="_blank">
                     <div className="aMemberOfUnion">
                         <img src={p2} title="Vice president of Union"/>
                         <b>Narine Petrosyan</b>
                         <p>Vice president of Union</p>
                     </div>
-                    </a>
-                    <a href="https://www.linkedin.com/in/maria-hambardzumyan-792388207/" target="_blank">
                     <div className="aMemberOfUnion">
                         <img src={p3} title="Assistant"/>
                         <b>Yana Karapetyan</b>
                         <p>Assistant</p>
-                    </div>
-                    </a>                        
+                    </div>                    
                     </div>
                 </div>
                 <h4>
-                    <Link to="/registrationpage" className="becomeMemberLink">
-                        <div className="becomeMemberButton">
-                        <button className="becomeAMember">Become a Member</button> 
-                        </div>
-                    </Link>
+                    {
+                        !aMember ?
+
+                        <Link to="/registrationpage" className="becomeMemberLink">
+                            <div className="becomeMemberButton">
+                            <button className="becomeAMember">Become a Member</button> 
+                            </div>
+                        </Link>
+                        : 
+                        null
+                    }
                 </h4>
             </div>
         </div>
