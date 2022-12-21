@@ -1,9 +1,6 @@
 
 
-
-
-import { Button, Card } from "@material-ui/core";
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import animationicon from "../../icons/animationIcon.png";
 import gamedevelopment from "../../icons/gamedevelopment.png";
 import filmmaking from "../../icons/filmmaking.png";
@@ -16,6 +13,11 @@ import professional from "../../icons/professional.jpg"
 import "./educationwork.css"
 
 function Cards () {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return(
         <div>
         <div className="programsContainer">

@@ -1,9 +1,13 @@
 import { Button } from "@material-ui/core";
-import React from "react";
+import React, {useEffect} from "react";
 import './registrationpage.css';
 import loggedinAvatar from "../../icons/people-03.png"
 
 function Home(){
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     const localQuestion=localStorage.getItem("question")
     const localEmail=localStorage.getItem("email")

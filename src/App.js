@@ -1,4 +1,5 @@
 import './App.css';
+import React, {useEffect} from "react";
 import Navbar from './components/navbar/navbar';
 import Aboutus from './components/aboutus/aboutus';
 import Activities from "./components/activities/activities"
@@ -15,6 +16,9 @@ import Regpage from './components/registrationpage/regpage';
 
 function App() {
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div className="App">

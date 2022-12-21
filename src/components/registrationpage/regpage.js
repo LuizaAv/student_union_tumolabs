@@ -27,8 +27,14 @@ export default function Regpage(){
         if(localSignUp){
             setShowHome(true)
         }
-       })
+        
+    })
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
+    
     const handleClick=()=>{
 
         if((repeatpassword.current.value === "") && (password.current.value === "")

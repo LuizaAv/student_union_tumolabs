@@ -1,7 +1,7 @@
 
 
 
-import React from "react";
+import React, {useEffect} from "react";
 import {ShortcutOfShortNews} from "../shortNews/shortnews";
 import "./newsevents.css";
 import "../shortNews/shortnews.css";
@@ -11,6 +11,9 @@ import news5 from "../../icons/news5.jpg";
 import news6 from "../../icons/news6.jpg";
 
 export default function Newsevents(){
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return(
         <div className="newsEventsContainer">

@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 
 import chess from "../../icons/chess.JPG";
 import cinema from "../../icons/cinema.jpg";
@@ -7,6 +7,10 @@ import book from "../../icons/books.jpg";
 import game from "../../icons/game.jpg";
 
 export default function Activities(){
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     return(
         <div className="activitiesShortContainer">

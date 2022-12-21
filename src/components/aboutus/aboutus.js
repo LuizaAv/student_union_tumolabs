@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./aboutus.css";
 import p1 from "../../icons/people-01.png";
 import p2 from "../../icons/people-08.png";
@@ -13,6 +13,10 @@ import AboutUsText from "./aboutustext";
 
 
 export default function Aboutus(){
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     const aMember = localStorage.getItem("signUp")
 
