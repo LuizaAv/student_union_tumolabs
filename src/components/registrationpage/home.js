@@ -14,11 +14,12 @@ function Home(){
 
     const logout=()=>{
         localStorage.removeItem("signUp")
-        window.location.pathname = "/registrationpage"
+        window.location.pathname = "/loginpage"
     }
     const deleteAccount=()=>{ 
         localStorage.clear()
         window.location.reload()
+        window.scrollTo(0, 0)
     }
     
     return(

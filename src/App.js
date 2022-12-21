@@ -13,6 +13,7 @@ import CurrentPage from './currentpage';
 import Footer from './components/footer/footer';
 import Userwelcome from './components/registrationpage/userwelcome';
 import Regpage from './components/registrationpage/regpage';
+import LoginRegistrationPage from './components/registrationpage/registrationpage';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/educationwork" element={<Educationwork />} />
         <Route path="/newsevents" element={<Newsevents />} />
         <Route path="/registrationpage"  element={<Regpage />}/>
+        <Route path="/loginpage" element={<LoginRegistrationPage/>} />
         <Route path="/registrationpage/userhomepage"  element={<Userwelcome />} />
         <Route path="/regpage" element={<Regpage/>}/>
       </Routes>
