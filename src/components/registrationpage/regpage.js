@@ -19,6 +19,8 @@ export default function Regpage(){
 
     const localSignUp=localStorage.getItem("signUp")
 
+    const localMotivation = localStorage.getItem("motivationText")
+
     const [showHome,setShowHome]=useState(false)
 
     useEffect(()=>{
@@ -28,11 +30,20 @@ export default function Regpage(){
        })
 
     const handleClick=()=>{
+        if(password.current.value.length < 8 || repeatpassword.current.value.length < 8 ){
+            alert("Password can't be less than 8 characters")
+        }
+
+        if(localMotivation.length > 50){
+            alert("The field can't exceed 50 letters")
+        }
+
         if((repeatpassword.current.value === "") && (password.current.value === "")
         && (email.current.value === "") && (name.current.value === "")) {
             alert("All fields must be filled")
             window.current.reload()
         }
+
         if(!(password.current.value===repeatpassword.current.value)){
             alert("Passwords don't match")
             window.current.reload()

@@ -42,12 +42,8 @@ export default function Footer(){
                     <FaTelegramPlane color="#D3D3D3" size={25}/>
                     <span className="footerItems"> Halabyan 2a, Yerevan, Armenia</span>
                 </div>
-                <div className="emailContainer">
-                    <FaEnvelope color="#D3D3D3" size={25}/>
-                    <span className="footerItems"> eutumocc@tumo.org</span>
-                </div>
                 <div className="phoneNumberContainer">
-                    <FaPhoneAlt color="#D3D3D3" size={25}/>
+                    <FaPhoneAlt color="#D3D3D3" size={25} />
                     <span className="footerItems"> +374 10 398413</span>
                 </div>
             </div>
