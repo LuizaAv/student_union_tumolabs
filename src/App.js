@@ -10,7 +10,6 @@ import Newsevents from "./components/newsevents/newsevents"
 import {Route, Routes} from "react-router-dom";
 import CurrentPage from './currentpage';
 import Footer from './components/footer/footer';
-import RegistrationPage from './components/registrationpage/registrationpage';
 import Userwelcome from './components/registrationpage/userwelcome';
 import Regpage from './components/registrationpage/regpage';
 
@@ -27,7 +26,7 @@ function App() {
         <Route path="/advicesupport" element={<Advicesupport />} />
         <Route path="/educationwork" element={<Educationwork />} />
         <Route path="/newsevents" element={<Newsevents />} />
-        <Route path="/registrationpage"  element={<RegistrationPage />}/>
+        <Route path="/registrationpage"  element={<Regpage />}/>
         <Route path="/registrationpage/userhomepage"  element={<Userwelcome />} />
         <Route path="/regpage" element={<Regpage/>}/>
       </Routes>
