@@ -49,7 +49,7 @@ export default function Regpage(){
             window.current.reload()
             }
             
-        if(name.current.value&&email.current.value&&password.current.value&&repeatpassword.current.value)
+        if(name.current.value&&email.current.value&&password.current.value&&repeatpassword.current.value&&motivationText.current.value)
             {
                 localStorage.setItem("name",name.current.value)
                 localStorage.setItem("email",email.current.value)
