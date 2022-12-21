@@ -1,14 +1,11 @@
-
-
-
 .faqContainer{
     display: flex;
     flex-direction: column;
-    width: 70% ;
+    width: 40%;
     text-align: start;
-    margin-left: 15%;
-    margin-top: 10%;
-
+    margin-left: 30%;
+    margin-top: 4%;
+    margin-bottom: 10%;
 }
 
 .faqContainer > h2 {
@@ -16,22 +13,26 @@
     margin-left: 4%;
 }
 
-
 .toggleContainer{
-    height: 100vw;
+    height: 16vw;
     text-align: justify;
 }
 
 .item{
     background-color: #D3D3D3;
-    margin-bottom: 3%;
-    height: 6vh;
+    margin-bottom: 1%;
+    height: 4vh;
     padding: 1%;
 }
 
 .title{
+    font-weight: bold;
     justify-content: space-between;
     cursor: pointer;
+}
+
+.title:hover{
+    color: #ee6c4dff;
 }
 
 .content {
@@ -41,17 +42,20 @@
 }
 
 .content_show{
-    width: 66.45vw;
-    margin-top: 1%;
-    margin-bottom: 5%;
+    transform: translateY(50%);
+    transform: translateX(50%);
+    margin-top: 4%;
+    margin-bottom: 4%;
     max-height: 100px;
     background-color: #D3D3D3;
     transition: all 0.5s cubic-bezier(1,1,1,1);
     text-align: start;
-    margin-left: -1%;
-    padding: 2%;
+}
+
+.title .content::after{
+    margin-top: 15px;
 }
 
 .questionTypeArea{
-    margin-top: -55%;
+    margin-top: 20%;
 }

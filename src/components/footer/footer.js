@@ -3,7 +3,7 @@
 import React from "react"
 import "./footer.css"
 
-import {FaFacebookF, FaLinkedinIn, FaYoutubeSquare, FaTelegramPlane, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import {FaFacebookF, FaLinkedinIn, FaYoutubeSquare, FaTelegramPlane, FaPhoneAlt, FaEnvelope, FaLocationArrow, FaMapPin } from "react-icons/fa";
 import footerLogo from "../../icons/footerLogo.png" 
 
 export default function Footer(){
@@ -39,17 +39,18 @@ export default function Footer(){
             </div>
             <div className="footerAddressMailPhoneContainer">
                 <div className="addressContainer">
-                    <FaTelegramPlane color="#D3D3D3" size={25}/>
+                    <FaMapPin color="#D3D3D3" size={25}/>
                     <span className="footerItems"> Halabyan 2a, Yerevan, Armenia</span>
-                </div>
-                <div className="emailContainer">
-                    <FaEnvelope color="#D3D3D3" size={25}/>
-                    <span className="footerItems"> eutumocc@tumo.org</span>
                 </div>
                 <div className="phoneNumberContainer">
                     <FaPhoneAlt color="#D3D3D3" size={25}/>
                     <span className="footerItems"> +374 10 398413</span>
                 </div>
+                <div className="emailContainer">
+                    <FaEnvelope color="#D3D3D3" size={25}/>
+                    <span className="footerItems"> eutumocc@tumo.org</span>
+                </div>
+                
             </div>
         </div>
     )

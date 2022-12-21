@@ -1,13 +1,18 @@
-
-
+.newsEventsContainer{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 6%;
+    
+}
 
 .newsShortContainer{
     display: flex;
     flex-direction: column;
     height: 64vh;
-    width: 75%;
+    width: 60%;
     margin: auto;
-    margin-top: 25%;
+    margin-top: 28%;
 }
 
 .shortNewsItem{
@@ -27,12 +32,24 @@
 }
 
 .shortNewsh2{
+    text-decoration: none;
     text-align: start;
 }
+
+.h22 {
+    text-decoration: none;
+}
+
+.h22:visited{
+    color: inherit;
+}
+
 
 .newsImg{
     height: 200px;
     width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 8px 8px rgba(0, 0, 0, 0.24);
 }
 
 .shortNewsPart > span {
@@ -40,6 +57,8 @@
 }
 
 .shortNewsPart > h3 {
+    margin-top: 0%;
+    margin-bottom: 2%;
     text-align: start;
 }
 

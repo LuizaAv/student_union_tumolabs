@@ -22,7 +22,7 @@ export default function Navbar(){
                 </div>
             </Link>
             <div id="navbarItem2">
-                    <CardContent>
+                    <CardContent style={{marginLeft:"20%"}}>
                         <Typography>
                             <b><Link to="/aboutus" className="navbarPages">About Us</Link></b>
                         </Typography>

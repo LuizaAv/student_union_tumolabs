@@ -1,11 +1,7 @@
-
-
-
-
 import { Button } from "@material-ui/core";
 import React from "react";
 import './registrationpage.css';
-import loggedinAvatar from "../../icons/loggedInAvatar.png"
+import loggedinAvatar from "../../icons/people-03.png"
 
 function Home(){
 
@@ -23,7 +19,7 @@ function Home(){
     
     return(
         <div className="homePageContainer">
-            <h1>Home Page </h1>
+            
             <div className="avatarAndNameContainer">
                 <img src={loggedinAvatar} className="loggedInAvatar"/>
                 <p>Welcome {localStorage.getItem('name')}</p>

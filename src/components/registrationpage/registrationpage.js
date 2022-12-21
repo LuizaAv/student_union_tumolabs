@@ -40,13 +40,12 @@ export default function LoginRegistrationPage(){
             {showHome?<Home/>:
             
                 <div className="container">
-                        <h1>Logged In User {localName}</h1>
-                        <h2>Login</h2>
+                        <h1> {localName}</h1>
                         <div className="input_space">
-                            <input placeholder="Email" type='text' ref={email} className="loginInputs"/>
+                            <input placeholder="email" type='text' ref={email} className="loginInputs"/>
                         </div>
                         <div className="input_space">
-                            <input placeholder="Password" type='password' ref={password} className="loginInputs"/>
+                            <input placeholder="password" type='password' ref={password} className="loginInputs"/>
                         </div>
                         <div className="homePageBtnsContainer">
                             <Button onClick={handleSignIn} className="homepageBtns"
