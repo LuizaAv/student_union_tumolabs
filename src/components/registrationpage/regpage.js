@@ -15,6 +15,7 @@ export default function Regpage(){
     const email=useRef()
     const password=useRef()
     const repeatpassword =useRef()
+    const motivationText =useRef()
 
     const localSignUp=localStorage.getItem("signUp")
 
@@ -44,6 +45,7 @@ export default function Regpage(){
                 localStorage.setItem("password",password.current.value)
                 localStorage.setItem("signUp",email.current.value)
                 localStorage.setItem("repeatpassword",repeatpassword.current.value)
+                localStorage.setItem("motivationText", motivationText.current.value)
                 alert("Account created successfully!!")
                 window.location.reload()
                 
@@ -67,6 +69,9 @@ export default function Regpage(){
                             </div>
                             <div className="input_space">
                                 <input placeholder="Email" type='text' ref={email} className="regInputs"/>
+                            </div>
+                            <div className="input_space_motivation">
+                                <input placeholder="describe your motivation at least 50 words" type='text' ref={motivationText} className="regInputs"/>
                             </div>
                             <div className="regBtnContainer">
                                 <Button onClick={handleClick} className="regSignUpBtn"
