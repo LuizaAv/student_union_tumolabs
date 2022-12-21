@@ -45,12 +45,7 @@ export default function Footer(){
                 <div className="phoneNumberContainer">
                     <FaPhoneAlt color="#D3D3D3" size={25} />
                     <span className="footerItems"> +374 10 398413</span>
-                </div>
-                <div className="emailContainer">
-                    <FaEnvelope color="#D3D3D3" size={25}/>
-                    <span className="footerItems"> eutumocc@tumo.org</span>
-                </div>
-                
+                </div>                
             </div>
         </div>
     )
