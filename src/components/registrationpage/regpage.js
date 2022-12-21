@@ -36,30 +36,31 @@ export default function Regpage(){
 
     
     const handleClick=()=>{
-
-        if((repeatpassword.current.value === "") && (password.current.value === "")
-        && (email.current.value === "") && (name.current.value === "")) {
-            alert("All fields must be filled")
-            window.current.reload()
-        }
-
-        if(!(password.current.value===repeatpassword.current.value)){
-            alert("Passwords don't match")
-            window.current.reload()
-            }
-            
-        if(name.current.value&&email.current.value&&password.current.value&&repeatpassword.current.value)
-            {
+        if(name.current.value&&email.current.value&&password.current.value&&repeatpassword.current.value){
                 localStorage.setItem("name",name.current.value)
                 localStorage.setItem("email",email.current.value)
                 localStorage.setItem("password",password.current.value)
                 localStorage.setItem("signUp",email.current.value)
                 localStorage.setItem("repeatpassword",repeatpassword.current.value)
-                localStorage.setItem("motivationText", motivationText.current.value)
-                alert("Account created successfully!!")
-                window.location.reload()
+                localStorage.setItem("motivationText", motivationText.current.value) 
+
+                if(password.current.value.length <= 8 || repeatpassword.current.value.length <= 8){
+                    alert("Password must contain at least 8 characters")
+                    localStorage.clear()
+                    return
+                }else if((repeatpassword.current.value === "") && (password.current.value === "")
+                    && (email.current.value === "") && (name.current.value === "")) {
+                        alert("All fields must be filled")
+                        window.current.reload()
+                }else if(!(password.current.value===repeatpassword.current.value)){
+                    alert("Passwords don't match")
+                    localStorage.clear()
+                    window.current.reload()
+                }
+                }    
                 
-            }
+                alert("Account created successfully!!")
+                window.location.reload()  
    }
 
 
