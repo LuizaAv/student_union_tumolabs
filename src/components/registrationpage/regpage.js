@@ -70,24 +70,23 @@ export default function Regpage(){
                         <div>
                             <h2>Registration</h2>
                             <div className="input_space">
-                                <input placeholder="Name" type='text' ref={name} className="regInputs"/>
+                                <input placeholder="name" type='text' ref={name} className="regInputs"/>
                             </div>
                             <div className="input_space">
-                                <input placeholder="Password" type='password' ref={password} className="regInputs"/>
+                                <input placeholder="password" type='password' ref={password} className="regInputs"/>
                             </div>
                             <div className="input_space">
-                                <input placeholder="Repeat password" type='password' ref={repeatpassword} className="regInputs"/>
+                                <input placeholder="repeat password" type='password' ref={repeatpassword} className="regInputs"/>
                             </div>
                             <div className="input_space">
-                                <input placeholder="Email" type='text' ref={email} className="regInputs"/>
+                                <input placeholder="email" type='text' ref={email} className="regInputs"/>
                             </div>
                             <div className="input_space_motivation">
                                 <input placeholder="describe your motivation at least 50 words" type='text' ref={motivationText} className="regInputs"/>
                             </div>
                             <div className="regBtnContainer">
-                                <Button onClick={handleClick} className="regSignUpBtn"
-                                style={{backgroundColor :"#D3D3D3", color: "#31333B"}}
-                                >Sign Up</Button>
+                                <button onClick={handleClick} className="regSignUpBtn"
+                                >Sign Up</button>
                             </div>
                         </div>
     }

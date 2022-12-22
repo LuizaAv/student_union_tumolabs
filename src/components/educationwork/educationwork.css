@@ -1,24 +1,21 @@
-
-
-
 .eduMainContainer{
-    display: flex;
     flex-direction: column;
-    margin-left: 10%;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10vh;
 }
 
 .eduMainContainer > h2 {
     text-align: start;
-    margin-top: 8%;
+    margin-top: 0vh;
+    margin-bottom: 4vh;
 }
 
 .programsContainer{
     display: flex;
     flex-direction: row;
-    height: 30vh;
     width: 65vw;
-    margin-top: 2%;
-    padding: 2%;
+    margin-top: 4vh;
 }
 
 .programsContainer > h4{
@@ -27,14 +24,16 @@
 
 .programsContainer > span {
     text-align: justify;
-    margin-left: 5%;
-    margin-right: 2%;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    max-height: 20vh;
 }
 
 .programsContainer > img {
-    margin-left: 3%;
     height: 200px;
     width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 8px 8px rgba(0, 0, 0, 0.24);
 }
 
 .loadMoreBtn{
@@ -47,27 +46,6 @@
     margin-top: 5%;
 }
 
-.jobContainer{
-    display: flex;
-    flex-direction: row;
-    height: 60vh;
-    width: 65vw;
-    margin-top: 2%;
-    padding: 2%;
-}
-
-.jobContainer > span {
-    text-align: justify;
-    margin-top: -2%;
-    margin-left: 5%;
-    margin-right: 2%;
-}
-
-.jobPlatformsContainer > h2 {
-    text-align: start;
-    margin-top: 8%;
-}
-
 .loadMoreBtn{
     cursor: pointer;
     margin: auto;
@@ -76,10 +54,10 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 171px;
-    height: 69px;
-    background: #98c1d9ff;
-    border-radius: 10px;
+    width: 20vh;
+    height: 6vh;
+    background: #e0fbfcff;
+    border-radius: 20px;
     border: none;
     font-size: 16px;
     font-weight: bold;
@@ -88,4 +66,29 @@
 
 .loadMoreBtn:hover{
     color: #ef476fff;
+}
+
+.jobContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4vh;
+}
+
+.jobContainer > span {
+    text-align: justify;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    max-height: 20vh;
+}
+
+.jobContainer > img {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 8px 8px rgba(0, 0, 0, 0.24);
+}
+
+.jobPlatformsContainer > h2 {
+    text-align: start;
+    margin-top: 8%;
 }

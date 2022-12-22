@@ -33,6 +33,7 @@
     justify-content: space-between;
     margin-left: 10%;
     margin-top: 0.5%;
+    margin-right: 4vw;
 }
 
 .navbarPages{
@@ -47,8 +48,9 @@
 
 .userIcon{
     color:#e0fbfcff;
-    height: 30px;
-    width: 30px;
+    height: 3vh;
+    width: 3vw;
+    margin-left: 0vw;
 }
 
 .userIcon:hover{
@@ -56,5 +58,5 @@
 }
 
 .userIconContainer{
-    margin-left: 10%;
+    margin-left: 4vw;
 }

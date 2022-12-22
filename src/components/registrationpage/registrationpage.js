@@ -48,13 +48,11 @@ export default function LoginRegistrationPage(){
                             <input placeholder="password" type='password' ref={password} className="loginInputs"/>
                         </div>
                         <div className="homePageBtnsContainer">
-                            <Button onClick={handleSignIn} className="homepageBtns"
-                            style={{backgroundColor :"#D3D3D3", color: "#31333B"}}
-                            >Log in</Button>
+                            <div><button onClick={handleSignIn} className="homepageBtns"
+                            >Log in</button>
                             <p >Not a member yet?</p>
-                            <Button onClick={handleClickNewMember} className="homepageBtns"
-                            style={{backgroundColor :"#D3D3D3", color: "#31333B"}}
-                            >Become a member</Button>
+                            <button onClick={handleClickNewMember} className="homepageBtns"
+                            >Become a member</button></div>
                         </div>
                 </div>
             }            

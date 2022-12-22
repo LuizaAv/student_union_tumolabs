@@ -1,27 +1,27 @@
-.regInputs{
-    cursor: pointer;
-    margin-top: 2vh;
-    margin-left: 25%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 50%;
-    height: 8vh;
-    background: #e0fbfcff;
-    border-radius: 20px;
-    border: none;
-    font-size: 16px;
+.container{
+    margin-top: 10vh;
+}
+
+.avatarAndNameContainer{
+    margin-top: 10vh;
+}
+
+.avatarAndNameContainer > p{
+    margin-left: 10%;
+    font-size: 24px;
     font-weight: bold;
-    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);  
+    text-align: left;
 }
 
-.regInputs:hover{
-    color: #ef476fff;
+.questionsContainer{
+    margin-top: 4vh;
 }
 
-.regSignUpBtn{
+.questionsContainer > span{
+    margin-left: 0%;
+}
+
+.logout{
     cursor: pointer;
     margin-right: 0%;
     display: flex;
@@ -39,11 +39,29 @@
     box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
 }
 
-.regSignUpBtn:hover{
+.logout:hover{
     color: #ef476fff;
 }
 
-.regBtnContainer{
+.loginDeleteBtnsContainer{
+    margin-top: 20vh;
+}
+
+.delete{
+    cursor: pointer;
+    margin-right: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     width: 10vw;
-    margin-left: 67%;
+    height: 4vh;
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+
+.delete:hover{
+    color: #ef476fff;
 }
