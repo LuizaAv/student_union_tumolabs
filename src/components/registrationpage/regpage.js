@@ -82,7 +82,7 @@ export default function Regpage(){
                                 <input placeholder="email" type='text' ref={email} className="regInputs"/>
                             </div>
                             <div className="input_space_motivation">
-                                <input placeholder="describe your motivation at least 50 words" type='text' ref={motivationText} className="regInputs"/>
+                                <input placeholder="describe your motivation at least 50 words" type='text' ref={motivationText} className="regInputsMotivation"/>
                             </div>
                             <div className="regBtnContainer">
                                 <button onClick={handleClick} className="regSignUpBtn"
