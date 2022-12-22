@@ -43,7 +43,7 @@ export default function Regpage(){
                 localStorage.setItem("signUp",email.current.value)
                 localStorage.setItem("repeatpassword",repeatpassword.current.value)
                 localStorage.setItem("motivationText", motivationText.current.value) 
-
+                
                 if(password.current.value.length <= 8 || repeatpassword.current.value.length <= 8){
                     alert("Password must contain at least 8 characters")
                     localStorage.clear()
