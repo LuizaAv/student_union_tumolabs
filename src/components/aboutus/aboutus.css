@@ -1,12 +1,18 @@
 .aboutusMain{
     height: 220vh;
     text-align: start;
-    margin: auto;
-    margin-top: 4%;
+    margin-top: 10vh;
     width: 60%;
+    margin-left: 20%;
     display: flex;
     flex-direction: column;
     margin-bottom: 4%;
+}
+
+.aboutusMain > h2{
+    text-align: start;
+    margin-top: 0vh;
+    margin-bottom: 4vh;
 }
 
 .membersOfUnion > h2 {
@@ -65,10 +71,10 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 171px;
-    height: 69px;
-    background: #98c1d9ff;
-    border-radius: 10px;
+    width: 20vh;
+    height: 6vh;
+    background: #e0fbfcff;
+    border-radius: 20px;
     border: none;
     font-size: 16px;
     font-weight: bold;

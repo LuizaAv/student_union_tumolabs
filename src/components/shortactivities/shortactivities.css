@@ -2,24 +2,26 @@
     display: flex;
     flex-direction: column;
     width: 60%;
-    margin: auto;
-    margin-top: 4%;
+    margin-left: 20%;
+    margin-top: 10vh;
 }
 
 .shortActivitiesH2{
     text-align: start;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
 }
 
 .shortActivitiesItem{
     display: flex;
     flex-direction: row;
-    margin-top: 3%;
+    margin-top: 4vh;
 }
 
 .shortAcitivitiesPart{
     display: flex;
     flex-direction: column;
-    margin-left: 3%;
+    margin-left: 4vw;
     text-align: left;
 }
 

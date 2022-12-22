@@ -1,11 +1,11 @@
 
 
 import React, {useState, useEffect} from "react";
-import animationicon from "../../icons/animationIcon.png";
-import gamedevelopment from "../../icons/gamedevelopment.png";
-import filmmaking from "../../icons/filmmaking.png";
-import webdevelopment from "../../icons/webdevelopment.png";
-import graphicdesign from "../../icons/graphicdesign.png";
+import animationicon from "../../icons/animation.gif";
+import gamedevelopment from "../../icons/gamedev.jpg";
+import filmmaking from "../../icons/cinema.jpg";
+import webdevelopment from "../../icons/webdev.jpg";
+import graphicdesign from "../../icons/graphicdesign.jpg";
 import jobfinder from "../../icons/jobfinder.jpg";
 import staff from "../../icons/staffam.png";
 import professional from "../../icons/professional.jpg"
@@ -21,7 +21,7 @@ function Cards () {
     return(
         <div>
         <div className="programsContainer">
-                <img src={gamedevelopment}/>
+                <img src={animationicon}/>
                 <span>
                 <h4>Animation</h4>
                 Animation is all about creating characters and bringing them to life. 
@@ -34,7 +34,7 @@ function Cards () {
                 </span>
             </div>
             <div className="programsContainer">
-                <img src={animationicon}/>
+                <img src={gamedevelopment}/>
                 <span>
                 <h4>Game development</h4>
                 Playing games is easy, building a game is a wholly different experience. 
@@ -114,12 +114,7 @@ export default function Educationwork(){
                      become essential and fundamental parts of our everyday lives. To be able to
                      provide those services efficiently and effectively, companies need employees who
                     are not only technically proficient but also possess additional requisite skills 
-                    in order to deliver the required services.  The search for qualified professional
-                    talent has become a strategic issue for many industries globally.  At the same
-                    time, in many developing countries, large numbers of highly qualified professionals 
-                    swell the ranks of armies of the unemployed simply because they lack self-presentation
-                    and self-marketing skills. Therefore there seems to be a problem in connecting 
-                    available talent with available positions. <a href="https://www.jobfinder.am/" target="_blank">For more information</a>
+                    in order to deliver the required services.<a href="https://www.jobfinder.am/" target="_blank">For more information</a>
                     </span>
                 </div>
                 <div className="jobContainer">
@@ -135,10 +130,7 @@ export default function Educationwork(){
                     important to create not just another standard job portal, but a community where 
                     employers can search and hire staff they need directly via staff.am, while employees 
                     apply for a job online and get noticed via staff.am.
-                    At staff.am we ensure individual approach for everyone. We offer free registration 
-                    for users, job invites via staff.am from employers registered in staff.am, 
-                    verification of skills and certificates included in CVs, huge database of potential 
-                    employees, flexible packages for companies to choose from and more. <a href="https://staff.am/en" target="_blank">For more information</a>
+                     <a href="https://staff.am/en" target="_blank">For more information</a>
                     </span>
                 </div>
                 <div className="jobContainer">
