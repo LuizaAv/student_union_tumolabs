@@ -70,7 +70,7 @@ export default function Regpage(){
                         <div>
                             <h2>Registration</h2>
                             <div className="input_space">
-                                <input placeholder="name" type='text' ref={name} className="regInputs"/>
+                                <input placeholder="tumo labs username" type='text' ref={name} className="regInputs"/>
                             </div>
                             <div className="input_space">
                                 <input placeholder="password" type='password' ref={password} className="regInputs"/>

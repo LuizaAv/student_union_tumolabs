@@ -105,7 +105,7 @@ export default function Educationwork(){
                 </button>
             </div>
             <div className="jobPlatformsContainer">
-                <h2>Job platforms for Students</h2>
+                <h2>Job and volunteering platforms for Students</h2>
                 <div className="jobContainer">
                     <img src={jobfinder}/>
                     <span>
